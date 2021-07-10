@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="#FFF"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/orderlist"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:text="#OrderNumber"
+            />
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Date"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_state"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#F80202"
+        android:textSize="8dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:text="State"
+        />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Total"
+        />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

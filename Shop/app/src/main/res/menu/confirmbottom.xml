@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_update_cart"
+        android:icon="@drawable/cartbar"
+        android:title="Update Cart"
+        />
+
+
+    <item
+        android:id="@+id/nav_confirm_order"
+        android:icon="@drawable/confirmorder"
+        android:title="Confirm Order"
+        />
+
+
+</menu>

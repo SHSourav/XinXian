@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    >
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        />
+
+    <TextView
+        android:id="@+id/addItem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ib_close"
+        android:text="Add Item"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        ></TextView>
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/addItem"
+        android:src="@drawable/addproductimage"
+
+        ></ImageView>
+
+
+    <EditText
+        android:id="@+id/ItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemImage"
+        android:hint="Name"
+        android:gravity="center"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+       android:layout_marginHorizontal="20dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/ItemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ItemName"
+        android:hint="Quantity"
+        android:gravity="center"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        ></EditText>
+
+    <Spinner
+        android:id="@+id/ItemUoM"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/ItemQuantity"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/ItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ItemUoM"
+        android:hint="Price"
+        android:gravity="center"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/ItemDiscountPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ItemPrice"
+        android:hint="Discount Price"
+        android:gravity="center"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/saveItem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Add"
+        android:layout_below="@+id/ItemDiscountPrice"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp">
+
+    </Button>
+
+</RelativeLayout>

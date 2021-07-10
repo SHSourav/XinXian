@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProducts">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+            android:id="@+id/update_round"
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_round"
+            app:corner_radius="15dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <ImageView
+                android:id="@+id/UpdateImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/addproductimage"></ImageView>
+
+
+        </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+
+        <EditText
+            android:id="@+id/UpdateProductName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:shadowColor="#111"
+            android:hint="        Product Name"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/UpdateProductQuantity"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#111"
+            android:hint="        Product Quantity"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/UpdateProductPrice"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:shadowColor="#111"
+            android:hint="        Product Price"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/UpdateProductUOM"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:shadowColor="#111"
+            android:hint="        Product UOM"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/UpdateProductDiscount"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:shadowColor="#111"
+            android:hint="        Product Discount"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/UpdateProductbutton"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Update Product"
+            android:textColor="#FBFBFB"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+</ScrollView>

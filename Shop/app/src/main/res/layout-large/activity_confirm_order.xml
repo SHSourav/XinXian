@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmOrder">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:text="Final Checkout"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_image_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Information:"
+                android:textColor="#111"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:textSize="19dp"/>
+            <TextView
+                android:id="@+id/final_username"
+                android:background="@drawable/edit_underline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="19dp"
+                android:textColor="@color/colorPrimary"
+                android:hint="User  nnname"
+                android:textColorHint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/final_mobile"
+                android:layout_width="wrap_content"
+                android:background="@drawable/edit_underline"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="19dp"
+                android:textColor="@color/colorPrimary"
+                android:hint="Mobile Number"
+                android:textColorHint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/final_address"
+                android:layout_width="wrap_content"
+                android:background="@drawable/edit_underline"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textColor="@color/colorPrimary"
+                android:hint="Shipping Address"
+                android:textColorHint="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_image_border"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method:"
+                android:textColor="#111"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="19dp"/>
+
+
+                <TextView
+                    android:id="@+id/final_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Cash On Delivery"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edit_image_border"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Payable:"
+                android:textColor="#111"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="19dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/final_subtotal"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="1000/="
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:layout_marginLeft="55dp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/final_checkbox"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Delivery Charge"/>
+                <TextView
+                    android:id="@+id/final_emergency"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="10/="
+                    android:textSize="19dp"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="55dp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/final_total"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="1000/="
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:textSize="19dp"
+                    android:layout_marginLeft="55dp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="65dp"
+android:layout_below="@+id/lay2"
+android:background="#FFF"
+android:gravity="center_horizontal"
+android:layout_marginTop="-65dp"
+    >
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNaviConfirm"
+    app:menu="@menu/confirmbottom"
+    app:labelVisibilityMode="labeled"
+    android:background="@color/colorPrimary"
+    app:itemIconTint="#FFF"
+    app:itemTextColor="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+
+</com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

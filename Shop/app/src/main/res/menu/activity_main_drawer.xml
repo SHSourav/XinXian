@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/myorders"
+            android:title="My Orders" />
+
+
+        <item android:title="Category">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_Cooking"
+                    android:icon="@drawable/cooking"
+                    android:title="Cooking" />
+                <item
+                    android:id="@+id/nav_health"
+                    android:icon="@drawable/healthcare"
+                    android:title="Health Care" />
+                <item
+                    android:id="@+id/nav_personal"
+                    android:icon="@drawable/personalcare"
+                    android:title="Personal Care" />
+                <item
+                    android:id="@+id/nav_dairy"
+                    android:icon="@drawable/dairy"
+                    android:title="@string/sweets_dairy" />
+                <item
+                    android:id="@+id/nav_drinks"
+                    android:icon="@drawable/drinks"
+                    android:title="Drinks" />
+                <item
+                    android:id="@+id/nav_bakery"
+                    android:icon="@drawable/bakery"
+                    android:title="@string/breads_bakery" />
+                <item
+                    android:id="@+id/nav_homeappliance"
+                    android:icon="@drawable/homeappliances"
+                    android:title="Home Appliances" />
+                <item
+                    android:id="@+id/nav_fruits"
+                    android:icon="@drawable/fruits"
+                    android:title="@string/fruits_vegetables" />
+                <item
+                    android:id="@+id/nav_kids"
+                    android:icon="@drawable/kids"
+                    android:title="Kids Zone" />
+                <item
+                    android:id="@+id/nav_party"
+                    android:icon="@drawable/party"
+                    android:title="Party Zone" />
+                <item
+                    android:id="@+id/nav_fashion"
+                    android:icon="@drawable/fashion"
+                    android:title="@string/fashion_life_style" />
+                <item
+                    android:id="@+id/nav_electronics"
+                    android:icon="@drawable/electronics"
+                    android:title="@string/hardware_electronics" />
+                <item
+                    android:id="@+id/nav_medicine"
+                    android:icon="@drawable/medicine2"
+                    android:title="Medicine" />
+
+
+            </menu>
+
+
+        </item>
+
+    </group>
+
+    <item android:title="Communicate">
+
+
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contactpng"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout2"
+                android:title="Logout"
+
+                />
+        </menu>
+    </item>
+
+</menu>

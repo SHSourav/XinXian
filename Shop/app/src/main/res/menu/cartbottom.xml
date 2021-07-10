@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/bottomhome"
+    android:title="Home"
+    />
+
+
+<item
+    android:id="@+id/nav_checkout"
+    android:icon="@drawable/nextcheckout"
+    android:title="Next"
+    />
+
+    <item
+    android:id="@+id/nav_processing"
+    android:icon="@drawable/processing"
+    android:title="Processing Order"
+    />
+
+
+</menu>

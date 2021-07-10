@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".AdminUpdateOthers">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Delivery Charge"
+        android:textColor="@color/colorPrimary"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/delivery_charge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Delivery Charge"
+        >
+
+    </EditText>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Delivery Charge less than MV"
+            android:textColor="@color/colorPrimary"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/delivery_charge_min"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Delivery Charge less than MV"
+            >
+
+        </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Minimum Value"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/admin_minimum_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Minimum Value"
+
+        >
+
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Free Delivery Value"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/admin_free_delivery_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Free Delivery Value"
+        >
+
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Mobile Number"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/admin_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Mobile Number"
+        android:layout_marginTop="10dp"
+        >
+
+    </EditText>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Email"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/admin_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:layout_marginTop="10dp"
+        >
+
+    </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Share Link"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/admin_Share_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Share Link"
+            android:layout_marginTop="10dp"
+            >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/update_others"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Update"
+            android:layout_marginTop="20dp"
+            ></Button>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="40dp"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/register1"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/SignUpShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:text="Registration"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/SignUpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="18dp"
+        android:textColor="#0A0A0A"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/SignUpPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="18dp"
+        android:inputType="phone"
+        android:textColor="#0A0A0A"
+        android:ems="10"/>
+
+
+
+    <EditText
+        android:id="@+id/SignUpEmail"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:textSize="18dp"
+        android:textColor="#0A0A0A"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/SignUpAddress"
+        android:layout_width="match_parent"
+        android:hint="Address"
+        android:textSize="18dp"
+        android:textColor="#0A0A0A"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/SignUpPass"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:textSize="18dp"
+        android:textColor="#0A0A0A"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Security Questions: "
+        android:textSize="19sp"
+        android:textColor="@color/colorPrimary"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Required to retrieve your password"
+        android:textSize="14sp"
+        android:textColor="@color/red"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+
+            android:id="@+id/selectbd"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#0A0A0A"
+            android:layout_marginTop="18dp"
+            android:text="Please Select Your Birthday -> "
+            >
+        </TextView>
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/calendar">
+
+
+        </ImageView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="SignUp" />
+
+
+    <TextView
+        android:id="@+id/AlreadyRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Already Registered? Login here"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="21dp" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressId"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
